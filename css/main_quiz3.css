@@ -1,0 +1,79 @@
+:root{
+    --main-color: tomato;
+    --text-color: #fff;
+}
+
+.main-header{
+    display: grid;
+    grid-auto-flow: column;
+    margin: 1rem;
+}
+.menu ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 1rem;
+    align-items: center;
+    text-align: center;
+}
+.menu li{
+    list-style: none;
+}
+.menu a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #000 !important;
+    position: relative;
+}
+
+.box{
+    width: 500px;
+    height: 200px;
+    background: var(--main-color);
+    margin: 10px;
+    position: relative;
+    /* transition-property: width, background, border-radius, transform;
+    transition-duration: 1s; */
+    /* Transition shorthand */
+    transition: all 4s;
+}
+
+/* Transition - active, hover, after, before */
+.box:hover{
+    width: 200px;
+    background: #11998e;
+    border-radius: 40px;
+    transform: rotateY(180deg);
+}
+
+/* Gradient - linear gradient  radial gradient */
+.a{
+    background: linear-gradient(to right, green 10%, yellow 60%, pink);
+}
+.b{
+    background: radial-gradient(circle, red, black);
+}
+/* uigradients.com */
+
+.c{
+    background: linear-gradient(to right, #11998e, #38ef7d);
+}
+.d{
+    background: linear-gradient(to right, #3494e6, #ec6ead);
+}
+.container-boxes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    align-items: center;
+}
+
+.photo-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+    text-align: center;
+}
+.photo{
+    width: 100%;
+}
+
